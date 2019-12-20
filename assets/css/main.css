@@ -306,6 +306,10 @@ input, select, textarea {
 		margin: 0 0 2rem 0;
 	}
 
+	.form-legend{
+		margin-bottom:1.5rem;
+	}
+
 		form > :last-child {
 			margin-bottom: 0;
 		}
