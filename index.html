@@ -384,7 +384,8 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 
 		<!-- Footer -->
 		<footer id="footer">
-			<p class="copyright">&copy; Billiam Kaine LLC.</p>
+			<p class="copyright">&copy;<span id="display-full-year"></span>
+				 Billiam Kaine LLC</p>
 		</footer>
 
 	</div>
@@ -393,6 +394,11 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 	<div id="bg"></div>
 
 	<!-- Scripts -->
+	<script> 
+	let date = new Date(); 
+	let fullYear = date.getFullYear();
+	document.getElementById('display-full-year').innerHTML = fullYear;
+	</script>
 	<script src="assets/js/jquery.min.js"></script>
 	<script src="assets/js/browser.min.js"></script>
 	<script src="assets/js/breakpoints.min.js"></script>
